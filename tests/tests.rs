@@ -12,10 +12,11 @@
 // limitations under the License.
 
 #![feature(std_panic, recover)]
+#![feature(btree_range, collections_bound)]
+#![feature(box_syntax)]
 #![feature(plugin)]
 #![cfg_attr(feature = "dev", plugin(clippy))]
 #![cfg_attr(not(feature = "dev"), allow(unknown_lints))]
-#![feature(btree_range, collections_bound)]
 
 #[macro_use]
 extern crate log;
